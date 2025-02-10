@@ -1,0 +1,35 @@
+.dataTable {
+    /* display: none; */
+    /* border-spacing: 0; */
+    border-collapse: collapse;
+}
+
+.dataTable,
+.dataTable th,
+.dataTable td {
+    border: 1px solid #000;
+}
+
+.dataTable th,
+.dataTable td {
+    padding: 10px 20px;
+}
+
+.dataTable thead tr {
+    background-color: black;
+    color: white;
+}
+
+.dataTable tbody tr:nth-child(odd) {
+    background-color: #aaa;
+}
+
+.dataTable tbody tr:hover {
+    cursor: pointer;
+    background-color: #666;
+    color: white;
+}
+
+h1 {
+    color: red;
+}

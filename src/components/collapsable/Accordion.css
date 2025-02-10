@@ -1,0 +1,22 @@
+.showCollapsable {
+    display: block;
+
+}
+
+.hideCollapsable {
+    display: none;
+}
+
+.toggleCollapsible {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapsable {
+    margin: 50px 10px;
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name": "Pedro Remoaldo",
+        "city": "Ermesinde",
+        "country": "Portugal"
+    },
+    {
+        "id":2,
+        "name": "Florian",
+        "city": "Hamburg",
+        "country": "Germany"
+    },
+    { 
+        "id":3,
+        "name": "Rahel",
+        "city": "Addis Ababa",
+        "country": "Ethiopia"
+    }
+]
