@@ -1,11 +1,11 @@
 //import "./App.css";
-import { Card } from "./components/Card";
-import Message from "./components/Message";
-import { People } from "./components/People";
+import { Card } from "./components/Card.jsx";
+import Message from "./components/Message.jsx";
+import { People } from "./components/People.jsx";
 
 import reactLogo from "./assets/react.svg";
-import { Cards } from "./components/Cards";
-import { PeopleTable } from "./components/PeopleTable";
+import { Cards } from "./components/Cards.jsx";
+import { PeopleTable } from "./components/PeopleTable.jsx";
 import { Header } from "./core/header/Header.jsx";
 
 import { Counter } from "./components/Counter.jsx";
@@ -18,7 +18,11 @@ import { useState, useEffect } from "react";
 import { Clock } from "./components/collapsable/Clock.jsx";
 import { Route, Routes } from "react-router-dom";
 import { NoRoute } from "./core/NoRoute.jsx";
-import { Jsonplaceholder } from "./components/Jsonplaceholder.jsx";
+import { Jsonplaceholder } from "./components/posts/Jsonplaceholder.jsx";
+import { PostsInfo } from "./components/posts/postsInfo.jsx";
+import { Students } from "./components/training/Students.jsx";
+import { StudentInfo } from "./components/training/studentInfo.jsx";
+
 function App() {
   let cardsInfo = [
     {
@@ -78,7 +82,7 @@ function App() {
   }
 
   /* <Clock /> */
-
+  // const { postId } = useParams();
   return (
     <>
       <header>
@@ -102,7 +106,15 @@ function App() {
             }
           />
           <Route path="randomText" element={<p>Hello there!!!</p>} />
-          <Route path="jsonplaceholder" element={<Jsonplaceholder />} />
+
+          <Route path="json" element={<Jsonplaceholder />} />
+
+          <Route path="json/:postId" element={<PostsInfo />} />
+
+          <Route path="students" element={<Students />}>
+            <Route path=":studentId" element={<StudentInfo />} />
+          </Route>
+
           <Route path="*" element={<NoRoute />} />
         </Routes>
       </main>

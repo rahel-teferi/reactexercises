@@ -15,7 +15,10 @@ export const Menu = () => {
             <NavLink to="collapsable">Collapsable</NavLink>
           </li>
           <li>
-            <NavLink to="jsonplaceholder">Jsonplaceholder</NavLink>
+            <NavLink to="json">Jsonplaceholder</NavLink>
+          </li>
+          <li>
+            <NavLink to="students">Students</NavLink>
           </li>
 
           <li>
