@@ -29,7 +29,7 @@ export const StudentInfo = () => {
   };
   useEffect(() => {
     fetchStudent(studentId);
-  },[studentId]);
+  }, [studentId]);
 
   const navigate = useNavigate();
   return (
@@ -45,7 +45,7 @@ export const StudentInfo = () => {
           onClick={(e) => {
             e.preventDefault();
             // navigate(-1);
-            navigate(`/students/${student.student_id+1}`);
+            navigate(`/students/${student.student_id + 1}`);
           }}
         >
           students list
@@ -55,7 +55,7 @@ export const StudentInfo = () => {
           onClick={(e) => {
             e.preventDefault();
             // navigate(-1);
-            navigate(`/students/${student.student_id-1}`);
+            navigate(`/students/${student.student_id - 1}`);
           }}
         >
           Prev
@@ -65,10 +65,10 @@ export const StudentInfo = () => {
           onClick={(e) => {
             e.preventDefault();
             // navigate(-1);
-            navigate(`/students/${student.student_id+1}`);
+            navigate(`/students/${student.student_id + 1}`);
           }}
         >
-         Next
+          Next
         </a>
       </p>
     </div>
