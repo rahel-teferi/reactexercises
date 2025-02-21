@@ -20,7 +20,9 @@ export const Menu = () => {
           <li>
             <NavLink to="students">Students</NavLink>
           </li>
-
+          <li>
+            <NavLink to="mui">Mui Table</NavLink>
+          </li>
           <li>
             <a href="https://www.cnn.com" target="_blank">
               CNN

@@ -22,6 +22,7 @@ import { Jsonplaceholder } from "./components/posts/Jsonplaceholder.jsx";
 import { PostsInfo } from "./components/posts/postsInfo.jsx";
 import { Students } from "./components/training/Students.jsx";
 import { StudentInfo } from "./components/training/studentInfo.jsx";
+import { Mui } from "./components/Mui.jsx";
 
 function App() {
   let cardsInfo = [
@@ -114,7 +115,7 @@ function App() {
           <Route path="students" element={<Students />}>
             <Route path=":studentId" element={<StudentInfo />} />
           </Route>
-
+          <Route path="mui" element={<Mui />} />
           <Route path="*" element={<NoRoute />} />
         </Routes>
       </main>
